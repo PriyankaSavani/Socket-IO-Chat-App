@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500&display=swap');
+
+body {
+    margin: 20px;
+    font-family: 'Kanit', sans-serif;
+    background-color: #E8E8E8;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#chat_body {
+    max-height: 250px;
+    min-height: 300px;
+    overflow: auto;
+}
+
+#chat-body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message-content {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+.message {
+   display: flex;
+   border-radius: 0.3rem;
+   margin-bottom: 1rem;
+}
+
+#theres {
+    background-color: $success;
+    color: $white;
+    flex-direction: row-reverse;
+    width: max-content;
+    margin-left: auto;
+    padding: 0.5rem;
+}
+
+#ours {
+    background-color: $gray-300;
+    color: $black;
+    width: max-content;
+    padding: 0.5rem;
+}
+
+input {
+    background-color: #E8E8E8;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+
+    &:focus,
+    &:focus-visible {
+        border: none;
+    }
+
+    ::placeholder {
+        margin-left: 0.875rem;
+    }
+}
